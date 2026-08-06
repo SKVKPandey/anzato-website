@@ -78,6 +78,6 @@ Options -Indexes
 </IfModule>
 
 # ---------- 10. Keep internal files private ----------
-<FilesMatch "\.(md|ipynb|py|env|log|bak)$">
+<FilesMatch "(^\.env$|\.(md|ipynb|py|env|log|bak|old|save|swp|sql|zip|tar|gz|tgz|rar|7z|sh|ini|yml|yaml|lock)$)">
   Require all denied
 </FilesMatch>
