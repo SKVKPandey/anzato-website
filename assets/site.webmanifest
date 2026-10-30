@@ -1,14 +1,13 @@
 {
   "name": "Anzato",
   "short_name": "Anzato",
-  "description": "Web design, development and SEO studio.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F5F6FA",
+  "theme_color": "#161A3A",
   "icons": [
     { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
     { "src": "/assets/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
-  ],
-  "theme_color": "#0e0f13",
-  "background_color": "#f6f5f1",
-  "display": "standalone",
-  "start_url": "/"
+  ]
 }
