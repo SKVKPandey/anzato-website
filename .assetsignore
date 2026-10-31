@@ -1,0 +1,11 @@
+# Never uploaded to Cloudflare.
+.htaccess
+.assetsignore
+wrangler.jsonc
+wrangler.toml
+*.md
+deploy
+.wrangler
+node_modules
+.git
+.env
