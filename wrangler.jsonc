@@ -1,0 +1,27 @@
+// Cloudflare Worker for anzato.com: static files only, no server code.
+// Deploy from this folder with:  npx wrangler deploy
+{
+  "name": "anzato-site",
+  "compatibility_date": "2026-10-01",
+
+  // Everything in this folder is served, except what .assetsignore lists.
+  "assets": {
+    "directory": ".",
+    // /work serves work.html, and /work.html redirects to /work.
+    "html_handling": "auto-trailing-slash",
+    // Unknown paths get 404.html with a real 404 status.
+    "not_found_handling": "404-page"
+  },
+
+  // Keeps the free preview address (anzato-site.<you>.workers.dev).
+  "workers_dev": true
+
+  // Custom domains. Switched on 1 Nov 2026. Deploy only after anzato.com
+  // shows "Active" in Cloudflare; before that, wrangler stops with an error
+  // and nothing changes. Cloudflare creates the DNS records and the SSL
+  // certificate for both addresses on the first deploy.
+  ,"routes": [
+    { "pattern": "anzato.com", "custom_domain": true },
+    { "pattern": "www.anzato.com", "custom_domain": true }
+  ]
+}
