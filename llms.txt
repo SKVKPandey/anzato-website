@@ -1,0 +1,53 @@
+# Anzato
+
+> Anzato is a small web engineering studio in Delhi, India, and the IT services arm of AnsatzAlgo Technologies Pvt. Ltd. It builds websites, Shopify stores and custom software, then does the technical SEO and AI search (GEO) work that gets them found. It is run by two developers, Shashank and Raj Aryan, who write the code themselves, so clients talk to the people doing the work rather than an account manager.
+
+Last updated: 2026-11-11
+
+## Key facts
+
+- Name: Anzato (https://anzato.com/)
+- What it is: the client services studio of AnsatzAlgo Technologies Pvt. Ltd., a registered Indian private limited company. AnsatzAlgo also builds Viewlo, its own product.
+- Founder and lead developer: Shashank (https://skvkpandey.com/)
+- Consultant: Raj Aryan (https://rajaryan.is-a.dev/), back ends, APIs and AI features: Python and Flask, RAG pipelines and LLM integrations
+- Based in: Mohan Garden, West Delhi, Delhi 110059, India
+- Clients in: the US, UAE, Singapore, the UK and India
+- Contact: contact@ansatzalgo.com or skvkpandey@gmail.com. Replies within one business day.
+- Book a call: https://calendly.com/skvkpandey/30min (free, 30 minutes)
+
+## Services
+
+- Websites and online stores: WordPress and custom PHP, Shopify theme work in Liquid, hand-built static sites, landing pages.
+- Search and AI visibility: technical SEO audits, GEO and AI search, schema and structured data, Core Web Vitals, Search Console and GA4.
+- SaaS and custom software: micro SaaS and MVPs, Python and Flask apps, dashboards and admin panels, maps and geospatial data, registration and booking systems, AI features with Azure OpenAI, hosting on Azure, Supabase and Cloudflare.
+- Immersive web: 360-degree virtual tours, A-Frame and WebXR, map-based discovery.
+- For agencies: limited white-label development and SEO overflow, under a written non-solicit.
+
+## Pricing (starting prices, fixed quote in writing before work starts)
+
+- Audit: USD 350 (INR 15,000 for Indian businesses), delivered in about a week.
+- Build or rebuild: from USD 1,500 (from INR 60,000), fixed quote after the call.
+- Monthly retainer: from USD 300 a month (from INR 12,000) for 10 hours a month.
+- Indian prices are plus applicable taxes. Payment is 50% upfront on a first project and the balance on delivery.
+
+## Work
+
+- T&A Global Group (https://www.taglobalgroup.com/): boutique consultancy with international clients. WordPress and technical SEO. The firm's homepage was not indexed by Google. After the work it was indexed (from zero in June 2025), with 99.9K search impressions in 16 months and 9,648 sessions from organic search.
+- ESO (https://weareso.in/): D2C activewear brand selling in India and abroad. Moved the Shopify store from a stock theme to a custom presentation layer in Liquid, with bundles, delivery options and brand story pages.
+- Lovecrafted (https://lovecrafted.store/): consumer web app in India for interactive cards sent as a link. Built in React, TanStack Start and Supabase on Cloudflare, including the storefront, card creator, passcode-protected links and QR sharing.
+- Delhi Building Safety Map (https://viewlo-risk-i7wciw.azurewebsites.net/): AnsatzAlgo's own experimental map that scores how likely 11,89,553 buildings in Delhi are to be damaged by heavy rain, flooding or an earthquake. Built on Azure App Service, Azure OpenAI and Azure Maps.
+- Viewlo (https://viewlo.in): AnsatzAlgo's own 360-degree virtual tour platform, with a tour editor, AI panorama studio, map-based discovery and creator dashboards.
+
+## How a project runs
+
+1. A free 30-minute call.
+2. A written scope with a fixed price and dates. NDA and agreement signed with a registered company.
+3. Build in the open on a staging link, with a short weekly update.
+4. Launch and handover. Hosting, analytics and Search Console are in the client's name.
+
+## Related sites
+
+- AnsatzAlgo Technologies, the parent company: https://ansatzalgo.com/
+- Shashank's personal site and portfolio: https://skvkpandey.com/
+- LinkedIn: https://www.linkedin.com/in/skvkpandey/
+- Raj Aryan's portfolio: https://rajaryan.is-a.dev/

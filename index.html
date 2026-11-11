@@ -1,811 +1,673 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anzato · Websites, SEO and custom software for growing businesses</title>
+<meta name="description" content="Anzato is a small engineering studio in Delhi and the IT services arm of AnsatzAlgo Technologies. We build websites, Shopify stores and custom tools, then do the technical SEO and AI search work that gets them found. Fixed quotes, NDA first, you own everything.">
+<link rel="canonical" href="https://anzato.com/">
+<meta name="theme-color" content="#161A3A">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Shashank">
+<link rel="alternate" type="text/plain" href="https://anzato.com/llms.txt" title="Anzato summary for AI systems">
 
-  <!-- ============================================================= -->
-  <!-- SEO & METADATA                                                 -->
-  <!-- ============================================================= -->
-  <title>Anzato | Web Design, Development &amp; SEO Studio | US · UAE · Singapore</title>
-  <meta name="description" content="Anzato designs, builds, and ranks high-performing websites, custom-coded (MERN, Django, Flask, PHP) or on WordPress, Shopify &amp; Wix, with performance optimization and SEO. A lean studio working with businesses in the US, UAE, and Singapore." />
-  <meta name="theme-color" content="#0f1115" />
-  <link rel="canonical" href="https://anzato.com/" />
-  <!-- max-image-preview:large lets Google show the full-size thumbnail in results -->
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anzato.com/">
+<meta property="og:site_name" content="Anzato">
+<meta property="og:title" content="Anzato · Websites, SEO and custom software">
+<meta property="og:description" content="Websites built properly, found afterwards, and the software behind them. A small studio where you talk to the developer.">
+<meta property="og:image" content="https://anzato.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Anzato · Websites, SEO and custom software">
+<meta name="twitter:description" content="Websites built properly, found afterwards, and the software behind them.">
+<meta name="twitter:image" content="https://anzato.com/assets/og.png">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Anzato | Web Design, Development &amp; SEO Studio | US · UAE · Singapore" />
-  <meta property="og:description" content="We design, build, optimize, and rank websites, coded or on WordPress, Shopify &amp; Wix. Built for businesses in the US, UAE, and Singapore." />
-  <meta property="og:url" content="https://anzato.com/" />
-  <meta property="og:site_name" content="Anzato" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://anzato.com/assets/og.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Anzato — web design, development and SEO studio" />
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="assets/site.webmanifest">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Anzato | Web Design, Development &amp; SEO Studio | US · UAE · Singapore" />
-  <meta name="twitter:description" content="We design, build, optimize, and rank websites, coded or on WordPress, Shopify &amp; Wix. Built for businesses in the US, UAE, and Singapore." />
-  <meta name="twitter:image" content="https://anzato.com/assets/og.png" />
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
 
-  <!-- Favicon set. The full logo mark loses its inner strokes below ~48px,
-       so the small sizes use a simplified version of the same A. -->
-  <link rel="icon" href="/favicon.ico" sizes="32x32" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-  <link rel="manifest" href="assets/site.webmanifest" />
-
-  <!-- Fonts are self-hosted from assets/fonts (SIL OFL, latin subset).
-       The two heaviest faces are preloaded so the headline and body text
-       reach their real face in the same round trip as the CSS, instead of
-       waiting on two third-party origins and re-painting the page. -->
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="assets/fonts/space-grotesk-latin-700-normal.woff2" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-        href="assets/fonts/inter-latin-400-normal.woff2" />
-
-  <link rel="stylesheet" href="styles.min.css" />
-
-  <!-- ============================================================= -->
-  <!-- ANALYTICS SLOT                                                 -->
-  <!-- Paste your Google Analytics / Plausible snippet below.         -->
-  <!-- ============================================================= -->
-  <!-- <script defer data-domain="anzato.com" src="https://plausible.io/js/script.js"></script> -->
-
-  <!-- ============================================================= -->
-  <!-- STRUCTURED DATA (JSON-LD)                                      -->
-  <!-- NOTE: JSON has no comment syntax. The previous version carried  -->
-  <!-- a /* ... */ block, which made the whole thing invalid and meant -->
-  <!-- search engines discarded it silently. Keep notes out here.      -->
-  <!--                                                                 -->
-  <!-- To add real NAP details for local-business results, add to the  -->
-  <!-- Organization node:                                              -->
-  <!--   "address": { "@type": "PostalAddress", "streetAddress": "...",-->
-  <!--     "addressLocality": "...", "addressRegion": "...",           -->
-  <!--     "postalCode": "...", "addressCountry": "IN" },              -->
-  <!--   "telephone": "+91..."                                         -->
-  <!-- Only add them if they are real. -->
-  <!-- ============================================================= -->
-  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://anzato.com/#organization",
-        "name": "Anzato",
-        "alternateName": "Anzato Studio",
-        "url": "https://anzato.com/",
-        "email": "skvkpandey@gmail.com",
-        "description": "Web design, development, and SEO studio. Custom-coded builds (MERN, Django, Flask, PHP) and platform work (WordPress, Shopify, Wix), plus performance optimization and SEO. A technology consultancy by AnsatzAlgo Technologies Pvt. Ltd., working with businesses in the US, UAE, and Singapore.",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://anzato.com/assets/icon-512.png",
-          "width": 512,
-          "height": 512
-        },
-        "image": "https://anzato.com/assets/og.png",
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "AnsatzAlgo Technologies Pvt. Ltd.",
-          "url": "https://ansatzalgo.com/"
-        },
-        "founder": {
-          "@type": "Person",
-          "name": "SKVK Pandey",
-          "url": "https://skvkpandey.com/",
-          "jobTitle": "Founder"
-        },
-        "areaServed": [
-          { "@type": "Country", "name": "United States" },
-          { "@type": "Country", "name": "United Arab Emirates" },
-          { "@type": "Country", "name": "Singapore" }
-        ],
-        "knowsAbout": [
-          "Web design",
-          "Website redesign",
-          "Search engine optimization",
-          "Core Web Vitals",
-          "Conversion rate optimization",
-          "WordPress",
-          "Shopify"
-        ]
-      },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://anzato.com/#service",
-        "name": "Anzato",
-        "url": "https://anzato.com/",
-        "image": "https://anzato.com/assets/og.png",
-        "email": "skvkpandey@gmail.com",
-        "provider": { "@id": "https://anzato.com/#organization" },
-        "areaServed": [
-          { "@type": "Country", "name": "United States" },
-          { "@type": "Country", "name": "United Arab Emirates" },
-          { "@type": "Country", "name": "Singapore" }
-        ],
-        "serviceType": [
-          "UI/UX Design",
-          "Web Development",
-          "Website Redesign",
-          "WordPress Development",
-          "Shopify Development",
-          "Website Performance Optimization",
-          "SEO",
-          "Generative Engine Optimization",
-          "Conversion Rate Optimization"
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Anzato services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website design and redesign", "description": "Modern, mobile-first websites built to turn visitors into enquiries." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom web development", "description": "Node.js/MERN, Django, Flask and PHP builds." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CMS and commerce", "description": "WordPress, Shopify and Wix set up, customized and optimized." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Performance optimization", "description": "Core Web Vitals, load speed and accessibility tuning." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO and AI search", "description": "Technical, on-page and local SEO, plus AI-search visibility." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ongoing care and growth", "description": "Monthly updates, SEO and iterative improvements." } }
-          ]
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://anzato.com/#website",
-        "url": "https://anzato.com/",
-        "name": "Anzato",
-        "inLanguage": "en",
-        "publisher": { "@id": "https://anzato.com/#organization" }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://anzato.com/#webpage",
-        "url": "https://anzato.com/",
-        "name": "Anzato | Web Design, Development & SEO Studio",
-        "description": "Anzato designs, builds, and ranks high-performing websites, custom-coded or on WordPress, Shopify and Wix, with performance optimization and SEO.",
-        "isPartOf": { "@id": "https://anzato.com/#website" },
-        "about": { "@id": "https://anzato.com/#organization" },
-        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://anzato.com/assets/og.png" },
-        "inLanguage": "en"
-      }
-    ]
+   "@type": [
+    "Organization",
+    "ProfessionalService"
+   ],
+   "@id": "https://anzato.com/#org",
+   "name": "Anzato",
+   "url": "https://anzato.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://anzato.com/assets/brand/mark.png"
+   },
+   "image": "https://anzato.com/assets/og.png",
+   "description": "Anzato is a small web engineering studio in Delhi, India, and the IT services arm of AnsatzAlgo Technologies Pvt. Ltd. It builds websites, Shopify stores and custom software, and does technical SEO and AI search (GEO) work.",
+   "email": "contact@ansatzalgo.com",
+   "priceRange": "$350 to $1,500+",
+   "areaServed": [
+    "US",
+    "AE",
+    "SG",
+    "GB",
+    "IN"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Mohan Garden",
+    "addressLocality": "West Delhi",
+    "addressRegion": "Delhi",
+    "postalCode": "110059",
+    "addressCountry": "IN"
+   },
+   "founder": {
+    "@id": "https://skvkpandey.com/#person"
+   },
+   "member": [
+    {
+     "@id": "https://skvkpandey.com/#person"
+    },
+    {
+     "@id": "https://rajaryan.is-a.dev/#person"
+    }
+   ],
+   "parentOrganization": {
+    "@id": "https://ansatzalgo.com/#org"
+   },
+   "knowsAbout": [
+    "Web design and development",
+    "WordPress",
+    "Shopify and Liquid",
+    "Technical SEO",
+    "Generative engine optimisation (GEO)",
+    "Structured data",
+    "Core Web Vitals",
+    "SaaS and MVP development",
+    "Python and Flask",
+    "Microsoft Azure",
+    "Azure OpenAI",
+    "RAG pipelines and LLM applications",
+    "Geospatial data",
+    "WebXR and 360 degree tours"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "name": "Website, SEO and AI search audit",
+     "price": "350",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Website, store or tool build or rebuild",
+     "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": "1500",
+      "priceCurrency": "USD"
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Monthly retainer, 10 hours a month",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "minPrice": "300",
+      "priceCurrency": "USD",
+      "unitText": "MONTH"
+     }
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/skvkpandey/"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://ansatzalgo.com/#org",
+   "name": "AnsatzAlgo Technologies Pvt. Ltd.",
+   "url": "https://ansatzalgo.com/"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://skvkpandey.com/#person",
+   "name": "Shashank",
+   "url": "https://skvkpandey.com/",
+   "jobTitle": "Founder and lead developer, Anzato",
+   "worksFor": {
+    "@id": "https://anzato.com/#org"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/skvkpandey/"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://rajaryan.is-a.dev/#person",
+   "name": "Raj Aryan",
+   "url": "https://rajaryan.is-a.dev/",
+   "jobTitle": "Consultant, Anzato",
+   "worksFor": {
+    "@id": "https://anzato.com/#org"
+   },
+   "knowsAbout": [
+    "Python",
+    "Flask",
+    "REST APIs",
+    "RAG pipelines",
+    "Vector databases",
+    "LLM integrations"
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/in/rajaryn",
+    "https://github.com/rajaryn"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://anzato.com/#website",
+   "url": "https://anzato.com/",
+   "name": "Anzato",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://anzato.com/#org"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://anzato.com/#webpage",
+   "url": "https://anzato.com/",
+   "name": "Anzato · Websites, SEO and custom software for growing businesses",
+   "isPartOf": {
+    "@id": "https://anzato.com/#website"
+   },
+   "about": {
+    "@id": "https://anzato.com/#org"
+   },
+   "author": {
+    "@id": "https://skvkpandey.com/#person"
+   },
+   "inLanguage": "en",
+   "datePublished": "2026-10-30",
+   "dateModified": "2026-11-11",
+   "primaryImageOfPage": "https://anzato.com/assets/og.png"
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://anzato.com/#faq",
+   "url": "https://anzato.com/#faq",
+   "isPartOf": {
+    "@id": "https://anzato.com/#webpage"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How much does a project cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The starting prices are in the pricing section. The exact number depends on scope, which is why the first call is free. You get a fixed price in writing before any work starts, and it does not change unless the scope does."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you work on the site I already have?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Plenty of work is fixing, speeding up or extending an existing WordPress, Shopify or custom site rather than starting again. We will tell you honestly if a rebuild is cheaper."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "I only need SEO. Do you do that on its own?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Technical SEO and AI search work is often where we start, beginning with an audit so you can see the problems before paying to fix them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you get my business mentioned in ChatGPT and other AI answers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We make your site easy for AI systems to crawl, read and quote: open crawler access, structured data, a clear answer at the top of each page and an llms.txt file. Then we track which AI tools send you visitors. Nobody can guarantee a mention, and we will not claim to."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you work with clients outside India?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. We work with clients in the US, UAE, Singapore, the UK and India, over video calls and email, with working hours that overlap US mornings, the Gulf and Singapore."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens after launch?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You get everything: code, logins and a short handover. If you want ongoing work, a monthly retainer covers updates, SEO and reporting. If not, you leave with nothing tied to us."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How quickly can you start?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Usually within one to two weeks of a signed scope. Small fixes can often start sooner."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you use templates or page builders?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not for client sites we build from scratch. We work in code, so pages stay fast and nothing breaks when a plugin updates. If your site already runs on a builder, we work with what is there."
+     }
+    }
+   ]
   }
-  </script>
+ ]
+}
+</script>
+
+<!-- ANALYTICS SLOT: paste your GA4 or Plausible snippet here. -->
 </head>
-
 <body>
-  <a class="skip-link" href="#offer">Skip to content</a>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+<a class="skip" href="#main">Skip to content</a>
 
-  <!-- ============================================================= -->
-  <!-- 1. NAV                                                         -->
-  <!-- ============================================================= -->
-  <header class="nav" id="nav">
-    <div class="container nav__inner">
-      <a class="nav__brand" href="#top" aria-label="Anzato home">
-        <span class="nav__mark" aria-hidden="true">
-          <img src="assets/logo-black.webp" alt="" width="37" height="30" fetchpriority="high" />
-        </span>
-        <span class="nav__word">Anzato</span>
-      </a>
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="#top" aria-label="Anzato, back to top">
+      <img src="assets/brand/mark.webp" width="40" height="33" alt="">
+      <span>Anzato</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#engage">Pricing</a>
+      <a href="#process">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--signal btn--sm nav__cta" href="https://calendly.com/skvkpandey/30min" target="_blank" rel="noopener" data-track="book-nav">Book a call</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+      <span class="sr">Menu</span><i></i><i></i>
+    </button>
+  </div>
+</header>
 
-      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+<main id="main">
 
-      <nav class="nav__menu" id="navMenu" aria-label="Primary">
-        <a href="#check">Instant check</a>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn--accent nav__cta" href="#contact">Free site audit</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <!-- =========================================================== -->
-    <!-- 2. HERO                                                      -->
-    <!-- =========================================================== -->
-    <section class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="hero__grid" aria-hidden="true"></div>
-      <div class="hero__shapes" aria-hidden="true">
-        <span class="shape shape--ring"></span>
-        <span class="shape shape--dot"></span>
-        <span class="shape shape--bar"></span>
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__bands" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="avail"><span class="dot" aria-hidden="true"></span>Booking new projects now</p>
+      <h1>Websites and software that earn their keep.</h1>
+      <p class="lede">Anzato is a small engineering studio in Delhi and the IT services arm of AnsatzAlgo Technologies. We build websites, Shopify stores and custom tools, then do the technical SEO and AI search work that gets them found. You talk to the developer, not an account manager.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--signal" href="https://calendly.com/skvkpandey/30min" target="_blank" rel="noopener" data-track="book-hero">Book a 30-minute call</a>
+        <a class="btn btn--ghost" href="#work">See the work</a>
       </div>
-      <div class="container hero__inner">
-       <div class="hero__copy">
-        <p class="hero__eyebrow hero-enter"><span class="hero__eyebrow-dot"></span>Shopify, WordPress &amp; custom builds · SEO · US · UAE · Singapore</p>
-        <h1 class="hero__title hero-enter" id="heroTitle">
-          Websites designed to convert, engineered to last, and
-          <span class="accent-text">built to rank.</span>
-        </h1>
-        <p class="hero__sub hero-enter">
-          Most stores launch on a stock theme and never move off it. We rebuild
-          the presentation layer in theme code, not the theme editor, then keep
-          the site growing in search. Shopify, WordPress and custom builds for
-          growing businesses in the US, UAE and Singapore.
-        </p>
-        <div class="hero__cta hero-enter">
-          <a class="btn btn--accent btn--lg btn--magnetic" href="#contact">Get a free site audit</a>
-          <a class="btn btn--ghost btn--lg btn--magnetic" href="#work">See work</a>
-        </div>
-        <p class="hero__note hero-enter">Free website &amp; SEO audit and a mini mockup. No cost, no obligation.</p>
-       </div>
-
-       <!-- Hero visual: an illustrative preview of the free audit deliverable.
-            Decorative and clearly labelled "Sample" so it never reads as a
-            real client result. -->
-       <div class="hero__visual hero-enter" aria-hidden="true">
-         <div class="auditcard">
-           <div class="auditcard__bar">
-             <span class="auditcard__dots"><i></i><i></i><i></i></span>
-             <span class="auditcard__url">yourwebsite.com</span>
-             <span class="auditcard__tag">Sample</span>
-           </div>
-           <div class="auditcard__body">
-             <div class="auditcard__head">
-               <span class="auditcard__label">Mobile audit</span>
-               <span class="auditcard__device">Before</span>
-             </div>
-             <div class="auditcard__rings">
-               <div class="miniscore" style="--v:34;--c:#d9534f"><span>34</span><small>Speed</small></div>
-               <div class="miniscore" style="--v:58;--c:#e0a02e"><span>58</span><small>SEO</small></div>
-               <div class="miniscore" style="--v:71;--c:#e0a02e"><span>71</span><small>A11y</small></div>
-             </div>
-             <ul class="auditcard__issues">
-               <li class="is-bad">Not mobile-optimized</li>
-               <li class="is-bad">6.7s to load on 4G</li>
-               <li class="is-bad">Missing meta description</li>
-             </ul>
-             <div class="auditcard__after">
-               <div class="auditcard__afterhead">
-                 <span class="auditcard__label">After redesign</span>
-                 <span class="auditcard__delta">+58</span>
-               </div>
-               <div class="auditcard__bars">
-                 <span class="barline"><i style="--w:34%"></i></span>
-                 <span class="barline barline--good"><i style="--w:92%"></i></span>
-               </div>
-               <p class="auditcard__foot">Illustrative example, not a client result.</p>
-             </div>
-           </div>
-         </div>
-       </div>
-
-        <div class="hero__stats hero-enter" aria-label="Anzato at a glance">
-          <div class="stat">
-            <span class="stat__num" data-count="3">3</span>
-            <span class="stat__label">Regions served</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" data-count="7" data-suffix="+">7+</span>
-            <span class="stat__label">Stacks &amp; platforms</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" data-count="100" data-suffix="%">100%</span>
-            <span class="stat__label">Founder-led delivery</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" data-count="1">1</span>
-            <span class="stat__label">Point of contact</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================== -->
-    <!-- 2b. TECH MARQUEE                                             -->
-    <!-- =========================================================== -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>UI/UX Design</span><span>MERN</span><span>Django</span><span>Flask</span><span>PHP</span><span>WordPress</span><span>Shopify</span><span>Wix</span><span>Core Web Vitals</span><span>Technical SEO</span><span>AI Search · GEO</span><span>CRO</span>
-        <span>UI/UX Design</span><span>MERN</span><span>Django</span><span>Flask</span><span>PHP</span><span>WordPress</span><span>Shopify</span><span>Wix</span><span>Core Web Vitals</span><span>Technical SEO</span><span>AI Search · GEO</span><span>CRO</span>
-      </div>
+      <ul class="facts">
+        <li><strong>Fixed quote</strong> before any work starts</li>
+        <li><strong>NDA</strong> signed on day one</li>
+        <li><strong>You own</strong> the code and every account</li>
+      </ul>
     </div>
 
-    <!-- =========================================================== -->
-    <!-- 3. THE OFFER / HOOK                                          -->
-    <!-- =========================================================== -->
-    <section class="section offer" id="offer">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="kicker">Where we start</p>
-          <h2>Start with a free audit and a mini mockup.</h2>
-          <p class="section__lead">
-            No vague pitch. We audit your current site's design, speed, and SEO,
-            then show you a short mockup of how a key page could look and perform.
-            You see the opportunity before you spend anything.
-          </p>
-        </div>
-        <ol class="steps">
-          <li class="step reveal">
-            <span class="step__num">1</span>
-            <h3>We audit your site</h3>
-            <p>A clear teardown of your design, performance, and SEO: what's quietly costing you visitors, leads, and rankings right now.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__num">2</span>
-            <h3>You see the opportunity</h3>
-            <p>A mini mockup of a key page plus the specific fixes we'd make, each mapped to a real business outcome, not vanity metrics.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step__num">3</span>
-            <h3>If it fits, we build it</h3>
-            <p>Like the direction? We design, build, and optimize the full site, coded or on your platform of choice. If not, nothing owed.</p>
-          </li>
-        </ol>
+    <aside class="check" aria-labelledby="checkTitle">
+      <div class="check__head">
+        <h2 id="checkTitle">Free site check</h2>
+        <p>Paste any address. Google Lighthouse tests it on mobile in about 30 seconds.</p>
       </div>
-    </section>
-
-    <!-- =========================================================== -->
-    <!-- 3b. INSTANT SITE CHECK (interactive lead magnet)             -->
-    <!-- =========================================================== -->
-    <section class="section check" id="check">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="kicker">Instant check</p>
-          <h2>See where your site stands in seconds.</h2>
-          <p class="section__lead">
-            Enter your URL for a quick, automated read on speed, mobile, and SEO
-            basics. Want the deep-dive with fixes mapped to outcomes? That's the
-            full free audit.
-          </p>
-        </div>
-        <div class="check__panel reveal">
-          <form class="check__form" id="auditForm" novalidate>
-            <input class="check__input" type="url" id="auditUrl" name="url"
-                   placeholder="https://yourwebsite.com" autocomplete="url"
-                   required aria-label="Your website URL" />
-            <button class="btn btn--accent btn--lg" type="submit" id="auditBtn">Run check</button>
-          </form>
-          <p class="check__hint" id="auditHint">Runs a live check via Google PageSpeed Insights. No sign-up, no email.</p>
-
-          <div class="check__results" id="auditResults" hidden>
-            <div class="scoregrid" id="scoreGrid" aria-live="polite"></div>
-            <div class="check__metrics" id="auditMetrics"></div>
-            <div class="check__cta">
-              <p id="auditSummary"></p>
-              <!-- When BACKEND_URL is set in script.js, JS swaps this for an
-                   email-capture form that emails the full AI PDF report. -->
-              <div class="check__report" id="reportAction">
-                <a class="btn btn--accent" href="#contact">Get the full audit →</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <form class="check__form" id="auditForm" novalidate>
+        <label class="sr" for="auditUrl">Website address</label>
+        <input id="auditUrl" name="url" type="text" inputmode="url" autocomplete="url" placeholder="yourcompany.com" required>
+        <button class="btn btn--ink" id="auditBtn" type="submit">Check my site</button>
+      </form>
+      <div class="scores" id="scoreGrid" aria-live="polite">
+        <div class="score" data-key="performance"><b>–</b><span>Speed</span></div>
+        <div class="score" data-key="seo"><b>–</b><span>SEO</span></div>
+        <div class="score" data-key="accessibility"><b>–</b><span>Accessibility</span></div>
+        <div class="score" data-key="best-practices"><b>–</b><span>Best practices</span></div>
       </div>
-    </section>
+      <dl class="metrics" id="auditMetrics">
+        <div><dt>Largest paint</dt><dd data-m="lcp">–</dd></div>
+        <div><dt>Layout shift</dt><dd data-m="cls">–</dd></div>
+        <div><dt>Blocking time</dt><dd data-m="tbt">–</dd></div>
+      </dl>
+      <p class="check__hint" id="auditHint">The scores tell you something is wrong. The call tells you what it is costing you and what to fix first.</p>
+      <a class="check__next" id="auditNext" href="https://calendly.com/skvkpandey/30min" target="_blank" rel="noopener" hidden data-track="book-after-check">Walk through these results on a call</a>
+    </aside>
+  </div>
+</section>
 
-    <!-- =========================================================== -->
-    <!-- 4. SERVICES                                                  -->
-    <!-- =========================================================== -->
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="kicker">Services</p>
-          <h2>Design, build, optimize, rank. End to end.</h2>
-          <p class="section__lead">
-            One studio across the whole lifecycle. Coded from scratch or built on
-            the platform you prefer, whatever gets you the best result.
-          </p>
-        </div>
-        <div class="cards cards--six">
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>Clean, modern interfaces designed around your users and your goals, from wireframes to polished, responsive UI.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg>
-            </div>
-            <h3>Custom Development</h3>
-            <p>Fast, scalable builds in the stack that fits: Node.js/MERN, Django, Flask, or PHP. Real engineering, not stretched templates.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9h18M9 21V9"/><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="6" cy="6" r=".6" fill="currentColor"/></svg>
-            </div>
-            <h3>CMS &amp; Commerce</h3>
-            <p>WordPress, Shopify, and Wix: set up, customized, and optimized so you can run and grow the site yourself with ease.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
-            </div>
-            <h3>Performance &amp; Optimization</h3>
-            <p>Core Web Vitals, load speed, accessibility, and conversion tuning that make existing sites faster and far higher-converting.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-            </div>
-            <h3>SEO &amp; AI Search</h3>
-            <p>Technical, on-page, and local SEO, plus AI-search (GEO) optimization to stay visible as search shifts to AI answers.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg>
-            </div>
-            <h3>Ongoing Care &amp; Growth</h3>
-            <p>A monthly retainer for updates, SEO, and iterative improvements: steady, compounding growth long after launch.</p>
-          </article>
-        </div>
+<!-- WORK -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>Who has Anzato worked with?</h2>
+      <p>Client work, and the products we run ourselves. Clients so far include a D2C brand selling in India and abroad, a consultancy serving clients across Europe, MENA, the US and Canada, and an agency owner building SaaS products.</p>
+    </header>
+
+    <article class="case case--lead">
+      <div class="case__media">
+        <figure class="frame">
+          <img src="assets/img/case-tanda.webp" width="1200" height="600" loading="lazy" alt="The T&amp;A Global Group homepage after the rebuild">
+        </figure>
+        <figure class="frame frame--chart">
+          <img src="assets/img/case-tanda-sessions.webp" width="1200" height="440" loading="lazy" alt="Google Analytics chart of sessions by channel for taglobalgroup.com, June 2025 to August 2026, with organic search rising from zero to a steady weekly baseline">
+        </figure>
+        <p class="caption">Sessions by channel, June 2025 to August 2026. Analytics was set up as part of the work, so every line starts at zero.</p>
       </div>
-    </section>
-
-    <!-- =========================================================== -->
-    <!-- 5. WORK / CASE STUDIES                                       -->
-    <!-- =========================================================== -->
-    <!--
-      WORK SECTION NOTES (for the founder):
-      - Viewlo and AnsatzAlgo are OWNED work — always safe to name, no permission needed.
-      - "A global consulting & advisory group" = T&A Global Group (anonymized by default).
-        Swap to the real name ONLY after confirming permission. Real name kept in comments.
-      - "A direct-to-consumer activewear brand" = ESO (anonymized by default).
-        Swap to the real name ONLY after confirming permission. Real name kept in comments.
-    -->
-    <section class="section work" id="work">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="kicker">Selected work</p>
-          <h2>Client builds first. Then the products we run ourselves.</h2>
-          <p class="section__lead">
-            Two paying clients, then two products Anzato and its parent AnsatzAlgo
-            built and still operate. The studio designing your site also runs
-            software in production.
-          </p>
-        </div>
-
-        <!-- ===================================================================
-             Case 1 — ESO. MERGED, Aug 2026.
-             This case and the old "Homepage redesign & conversion concept" case
-             used byte-identical images (redesign-before.webp is the same file as
-             the ESO before shot; redesign-after.webp is the same file as
-             activewear.webp). The site was showing one real project twice, and
-             the second time it was unnamed and described as "the kind of mockup
-             we produce in every free audit", which reads as speculative work.
-             Merged into one named case that keeps the slider.
-             redesign-after.webp is now an unused duplicate of activewear.webp.
-             =================================================================== -->
-        <article class="case case--feature reveal">
-          <div class="case__media">
-            <div class="mockup mockup--browser">
-              <div class="mockup__bar" aria-hidden="true"><span></span><span></span><span></span></div>
-              <div class="compare" id="compareRedesign">
-                <div class="compare__layer compare__after">
-                  <div class="mockup__img">
-                    <img class="shot" src="assets/img/activewear.webp" width="1200" height="600"
-                         alt="The ESO storefront after the rebuild: a light editorial layout with bundles and brand pages"
-                         loading="lazy" decoding="async" />
-                  </div>
-                </div>
-                <div class="compare__layer compare__before">
-                  <div class="mockup__img">
-                    <img class="shot" src="assets/img/redesign-before.webp" width="1200" height="600"
-                         alt="The same ESO storefront on the stock Shopify Dawn theme"
-                         loading="lazy" decoding="async" />
-                  </div>
-                </div>
-                <div class="compare__divider" aria-hidden="true"><span class="compare__grip"></span></div>
-                <input class="compare__range" type="range" min="0" max="100" value="50" step="0.1" aria-label="Drag to compare the stock Dawn theme with the rebuilt storefront" />
-                <span class="compare__tag compare__tag--before" aria-hidden="true">Before</span>
-                <span class="compare__tag compare__tag--after" aria-hidden="true">After</span>
-              </div>
-            </div>
-          </div>
-          <div class="case__body">
-            <p class="case__tag">Client work · Shopify</p>
-            <h3>ESO — D2C activewear brand</h3>
-            <ul class="case__stack" aria-label="Stack used">
-              <li>Shopify</li><li>Liquid</li><li>Theme development</li><li>Conversion UX</li>
-            </ul>
-            <p>Launched on Dawn, Shopify's free default theme, like roughly one
-            store in five. We rebuilt the storefront presentation in the theme's
-            Liquid templates rather than the theme editor: a light editorial
-            layout, bundle products so several SKUs sell as one unit, custom
-            shipping and delivery options, and brand story pages the stock theme
-            could not support. <strong>Drag the slider</strong> to compare.</p>
-            <!-- TODO, BLOCKING: this Result line still has no number in it, and
-                 every other Result line on this site does. Ask the client for
-                 conversion rate, average order value or bundle attach rate
-                 before and after, then rewrite this. One real figure is enough.
-                 Do not replace it with more adjectives. -->
-            <p class="case__result"><strong>Result:</strong> off the stock theme
-            and onto a custom presentation layer, with bundles live as a selling
-            mechanic and editorial brand pages the theme did not previously
-            support.</p>
-          </div>
-        </article>
-
-        <!-- Case 2 — T&A. Positioned as what the first project becomes. -->
-        <article class="case reveal">
-          <div class="case__media">
-            <div class="mockup mockup--browser">
-              <div class="mockup__bar" aria-hidden="true"><span></span><span></span><span></span></div>
-              <div class="mockup__img">
-                <img class="shot" src="assets/img/consulting.webp" width="1200" height="600"
-                     alt="T&amp;A Global Group homepage, redesigned on WordPress"
-                     loading="lazy" decoding="async" />
-              </div>
-            </div>
-          </div>
-          <div class="case__body">
-            <p class="case__tag">Client work · ongoing</p>
-            <h3>T&amp;A Global Group — consulting &amp; advisory</h3>
-            <ul class="case__stack" aria-label="Stack used">
-              <li>WordPress</li><li>PHP</li><li>Technical SEO</li><li>Search Console</li><li>GA4</li>
-            </ul>
-            <p>This is what a build turns into when it keeps running. WordPress
-            development across homepage, contact, portfolio and insights, with
-            custom PHP in the backend for client-specified pages. Then the part
-            that compounds: Search Console and Analytics set up, a new sitemap
-            submitted, on-page SEO reworked through the templates rather than
-            page by page, keyword-targeted blog content published, and a
-            newsletter capture with server-side logging.</p>
-            <p class="case__result"><strong>Result:</strong> the homepage was not indexed at all before May 2025 and was indexing from June. Search Console has since recorded 99.9K impressions from a base of zero, organic search accounts for 9,648 sessions, and monthly traffic runs at roughly 2,100 visitors against under 500 before the work.</p>
-          </div>
-        </article>
-
-        <!-- Case 3 — Viewlo -->
-        <article class="case reveal">
-          <div class="case__media">
-            <div class="mockup mockup--browser">
-              <div class="mockup__bar" aria-hidden="true"><span></span><span></span><span></span></div>
-              <div class="mockup__img">
-                <video class="shot" playsinline muted loop preload="none"
-                       poster="assets/img/viewlo.webp" width="1200" height="600"
-                       aria-label="Viewlo, a 360 degree virtual tour of a venue interior with a scene list"
-                       data-autoplay-in-view>
-                  <source src="assets/img/viewlo.webm" type="video/webm" />
-                  <source src="assets/img/viewlo.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-          <div class="case__body">
-            <p class="case__tag">Owned product</p>
-            <h3>Viewlo: a 360° virtual tour discovery &amp; booking platform</h3>
-            <p>
-              Designed and built end to end: immersive 360° virtual tours, an AI
-              panorama studio, interactive map-based venue discovery, and creator
-              dashboards. Built on a custom web stack: Flask/Python backend,
-              A-Frame/WebXR tours, Google Maps.
-            </p>
-            <p class="case__result">
-              <strong>Result:</strong> a live product serving real venues with a
-              growing user base.
-            </p>
-            <p class="case__meta">A product of AnsatzAlgo Technologies Pvt. Ltd. (Anzato's parent).</p>
-          </div>
-        </article>
-
-        <!-- Case 4 — AnsatzAlgo -->
-        <article class="case reveal">
-          <div class="case__media">
-            <div class="mockup mockup--browser">
-              <div class="mockup__bar" aria-hidden="true"><span></span><span></span><span></span></div>
-              <div class="mockup__img">
-                <img class="shot" src="assets/img/ansatzalgo.webp" width="1200" height="600"
-                     alt="The AnsatzAlgo Technologies homepage, headlined &quot;We build practical AI and immersive web products&quot;"
-                     loading="lazy" decoding="async" />
-              </div>
-            </div>
-          </div>
-          <div class="case__body">
-            <p class="case__tag">Owned work · Parent company</p>
-            <h3>AnsatzAlgo Technologies: corporate web presence</h3>
-            <p>Designed and built the company's own website and web presence. The studio's parent-company site, and proof that Anzato builds its own infrastructure.</p>
-            <p class="case__result"><strong>Result:</strong> a clean, credible corporate site that doubles as the home of Anzato's parent company.</p>
-          </div>
-        </article>
+      <div class="case__body">
+        <p class="case__tag">Boutique consultancy with international clients. WordPress and technical SEO</p>
+        <h3>T&amp;A Global Group</h3>
+        <p><span class="lbl">Problem.</span> The firm's own homepage was not indexed by Google. It could not be found for its own name, so every other marketing spend leaked.</p>
+        <p><span class="lbl">What we did.</span> Cleared the indexing block, rebuilt key pages, fixed on-page SEO at the template level, set up Search Console and GA4, and added a newsletter capture with server-side logging.</p>
+        <ul class="stats">
+          <li><b>Indexed</b><span>homepage, from zero in June 2025</span></li>
+          <li><b>99.9K</b><span>search impressions in 16 months</span></li>
+          <li><b>9,648</b><span>sessions from organic search</span></li>
+          <li><b>60.7%</b><span>organic engagement, vs 25.5% direct</span></li>
+        </ul>
+        <!-- TESTIMONIAL SLOT: a quote from T&A, same markup as the one in the Lovecrafted card. -->
+        <a class="link" href="https://www.taglobalgroup.com/" target="_blank" rel="noopener">Visit taglobalgroup.com</a>
       </div>
-    </section>
+    </article>
 
-    <!-- =========================================================== -->
-    <!-- 6. PROCESS                                                   -->
-    <!-- =========================================================== -->
-    <section class="section process" id="process">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="kicker">Process</p>
-          <h2>Four steps. No jargon, no runaround.</h2>
+    <div class="case-row">
+      <article class="case case--small">
+        <div class="compare" id="compare" style="--pos:50%">
+          <img src="assets/img/case-eso-after-2026-11.webp" width="1200" height="600" loading="lazy" alt="ESO storefront after the custom rebuild: light editorial layout">
+          <div class="compare__before">
+            <img src="assets/img/case-eso-before-2026-11.webp" width="1200" height="600" loading="lazy" alt="ESO storefront before, on the stock dark Shopify Dawn theme">
+          </div>
+          <span class="compare__tag compare__tag--l">Before</span>
+          <span class="compare__tag compare__tag--r">After</span>
+          <label class="sr" for="compareRange">Drag to compare before and after</label>
+          <input class="compare__range" id="compareRange" type="range" min="0" max="100" value="50">
+          <span class="compare__handle" aria-hidden="true"></span>
         </div>
-        <div class="timeline">
-          <div class="phase reveal">
-            <span class="phase__num">01</span>
-            <h3>Discover</h3>
-            <p>We learn your business, your customers, and what a "win" looks like for you.</p>
-          </div>
-          <div class="phase reveal">
-            <span class="phase__num">02</span>
-            <h3>Concept</h3>
-            <p>We design a modern concept of your homepage, free, so you see it before deciding.</p>
-          </div>
-          <div class="phase reveal">
-            <span class="phase__num">03</span>
-            <h3>Build</h3>
-            <p>We build the full site: fast, mobile-first, and tuned to generate calls.</p>
-          </div>
-          <div class="phase reveal">
-            <span class="phase__num">04</span>
-            <h3>Launch &amp; Grow</h3>
-            <p>We launch it and, if you want, keep it growing with ongoing SEO and care.</p>
-          </div>
+        <div class="case__body">
+          <p class="case__tag">D2C activewear, selling in India and abroad. Shopify theme in Liquid</p>
+          <h3>ESO</h3>
+          <p>Moved the store off a stock theme onto a custom presentation layer written in Liquid. Bundles now sell several products as one, delivery options match how the business actually ships, and brand story pages exist where the theme had none.</p>
+          <a class="link" href="https://weareso.in/" target="_blank" rel="noopener">Visit weareso.in</a>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- =========================================================== -->
-    <!-- 7. ABOUT                                                     -->
-    <!-- =========================================================== -->
-    <section class="section about" id="about">
-      <div class="container about__grid">
-        <div class="about__text reveal">
-          <p class="kicker">About</p>
-          <h2>The person who designs your site is the person you talk to.</h2>
-          <p>
-            Anzato is the technology consultancy wing of
-            <strong>AnsatzAlgo Technologies Pvt. Ltd.</strong>, founded and led by
-            <strong>SKVK Pandey</strong>. We're a small studio working with businesses in
-            the <strong>US, UAE, and Singapore</strong>: direct, founder-led
-            delivery with no account managers and no bloat.
-          </p>
-          <p>
-            We work across custom code (Node.js/MERN, Django, Flask, PHP) and
-            platforms (WordPress, Shopify, Wix). And we don't just design pages:
-            Anzato and AnsatzAlgo build and run their own products, including
-            <strong>Viewlo</strong>, a live 360° virtual tour platform. You're
-            working with a team that ships and operates real software in production,
-            not just slides.
-          </p>
-          <p class="about__link">
-            <a class="link-arrow" href="https://skvkpandey.com" target="_blank" rel="noopener">Meet the founder →</a>
-          </p>
+      <article class="case case--small">
+        <figure class="frame">
+          <img src="assets/img/case-lovecrafted.webp" width="758" height="379" loading="lazy" alt="The Lovecrafted homepage: Feelings, made tappable, with a live phone preview of a birthday card">
+        </figure>
+        <div class="case__body">
+          <p class="case__tag">Consumer web app, India. React, TanStack Start, Supabase, Cloudflare</p>
+          <h3>Lovecrafted</h3>
+          <p>Interactive cards people send as a link: a birthday party with balloons to pop and a cake to choose, or an apology with a forgiveness meter to tap. We built the storefront, the card creator, the card experiences with their music and animation, passcode-protected links and QR sharing, and run the hosting.</p>
+          <!-- TESTIMONIAL SLOT: paste the client's own words here once they send them.
+          <blockquote class="quote">
+            <p>"Client's quote, in their words."</p>
+            <footer>Name, Founder, Lovecrafted</footer>
+          </blockquote>
+          -->
+          <a class="link" href="https://lovecrafted.store/" target="_blank" rel="noopener">Visit lovecrafted.store</a>
         </div>
-        <aside class="about__card reveal" aria-label="At a glance">
-          <ul class="facts">
-            <li><span>Model</span><strong>Lean, founder-led studio</strong></li>
-            <li><span>Works with</span><strong>US · UAE · Singapore</strong></li>
-            <li><span>Stack</span><strong>MERN, Django, Flask, PHP · WordPress, Shopify, Wix</strong></li>
-            <li><span>Flagship</span><strong>Viewlo · 360° tour platform</strong></li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+      </article>
 
-    <!-- =========================================================== -->
-    <!-- 8. WHY ANZATO                                                -->
-    <!-- =========================================================== -->
-    <section class="section why" id="why">
-      <div class="container">
-        <div class="section__head reveal">
-          <p class="kicker">Why Anzato</p>
-          <h2>Lean and direct, where it counts.</h2>
+      <article class="case case--small">
+        <figure class="frame">
+          <img src="assets/img/case-risk-map.webp" width="766" height="383" loading="lazy" alt="Delhi Building Safety Map: a hexagon map of Delhi coloured from green to red by building risk, with filters for heavy rain, flooding, earthquake and rent">
+        </figure>
+        <div class="case__body">
+          <p class="case__tag">Our own product. Azure App Service, Azure OpenAI, Azure Maps, geospatial data</p>
+          <h3>Delhi Building Safety Map</h3>
+          <p>A map that scores how likely buildings are to be damaged by heavy rain, flooding or an earthquake. It checks 11,89,553 buildings in Delhi using building shapes and heights, ground level, rivers and drains and earthquake zones, and lets people fly into any area in 3D. Area guides are written by Azure OpenAI, and residents can add what they pay in rent.</p>
+          <a class="link" href="https://viewlo-risk-i7wciw.azurewebsites.net/" target="_blank" rel="noopener">Open the map</a>
         </div>
-        <div class="why__grid">
-          <div class="why__item reveal">
-            <h3>Direct, founder-led</h3>
-            <p>You talk to the person building your site. No hand-offs, no telephone game.</p>
-          </div>
-          <div class="why__item reveal">
-            <h3>Full-stack capability</h3>
-            <p>Coded or CMS: MERN, Django, Flask, PHP, WordPress, Shopify, Wix. We pick the right tool for your build.</p>
-          </div>
-          <div class="why__item reveal">
-            <h3>Outcome &amp; search focused</h3>
-            <p>Designed for results: leads, sales, and search visibility, including the shift to AI-powered search.</p>
-          </div>
-          <div class="why__item reveal">
-            <h3>Fair global pricing</h3>
-            <p>Premium delivery across US, UAE &amp; Singapore timezones, without the agency overhead baked into your bill.</p>
-          </div>
+      </article>
+
+      <article class="case case--small">
+        <figure class="frame frame--video">
+          <video autoplay muted loop playsinline preload="none" poster="assets/img/viewlo.webp" width="1200" height="600" aria-label="Screen recording of a Viewlo 360 degree virtual tour">
+            <source src="assets/img/viewlo.webm" type="video/webm">
+            <source src="assets/img/viewlo.mp4" type="video/mp4">
+          </video>
+        </figure>
+        <div class="case__body">
+          <p class="case__tag">Our own product. Flask, WebXR, Azure OpenAI</p>
+          <h3>Viewlo</h3>
+          <p>A 360° virtual tour platform we designed, built and still run: a tour editor, an AI panorama studio, map-based discovery and creator dashboards. It is why we take maintenance seriously. We live with our own code every day.</p>
+          <a class="link" href="https://viewlo.in" target="_blank" rel="noopener">Visit viewlo.in</a>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- =========================================================== -->
-    <!-- 9. CTA BAND                                                  -->
-    <!-- =========================================================== -->
-    <section class="section cta-band" id="cta">
-      <div class="container cta-band__inner reveal">
-        <h2>See what your website could do. Free.</h2>
-        <p>Get a free website &amp; SEO audit and a mini mockup of a key page: clear, specific, and yours to keep whether we work together or not.</p>
-        <a class="btn btn--accent btn--lg" href="#contact">Get my free audit</a>
-      </div>
-    </section>
+      <!-- CASE SLOT: micro SaaS web app built for an agency owner.
+           Copy one of the case--small articles above, then add the
+           screenshot to assets/img/ and the details. -->
+    </div>
+  </div>
+</section>
 
-    <!-- =========================================================== -->
-    <!-- 10. CONTACT                                                  -->
-    <!-- =========================================================== -->
-    <section class="section contact" id="contact">
-      <div class="container contact__grid">
-        <div class="contact__intro reveal">
-          <p class="kicker">Contact</p>
-          <h2>Tell us about your project.</h2>
-          <p>Send a note and we'll get back to you, usually within one business day. We work across US, UAE, and Singapore timezones. Prefer email? Reach us directly at <a class="link-arrow" href="mailto:skvkpandey@gmail.com">skvkpandey@gmail.com</a>.</p>
-          <p class="contact__founder">Want to vet us first? <a class="link-arrow" href="https://skvkpandey.com" target="_blank" rel="noopener">Meet the founder →</a></p>
-        </div>
+<!-- SERVICES -->
+<section class="sec sec--alt" id="services">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>What can you hire Anzato for?</h2>
+      <p>Websites and online stores, search and AI visibility, SaaS and custom software, and immersive web. One studio for the site, the search visibility under it and the software behind it. No handoffs between three vendors who blame each other.</p>
+    </header>
 
-        <form class="contact__form reveal" id="contactForm" novalidate>
-          <!-- =========================================================
-               FORM ENDPOINT SLOT
-               No backend is assumed. Two ways to make this send:
-               1) Paste a Formspree / Web3Forms / Netlify endpoint URL into
-                  the data-endpoint attribute below. JS will POST to it.
-               2) Leave it blank — the form falls back to opening the user's
-                  email client (mailto:skvkpandey@gmail.com) with the message.
-               Example: data-endpoint="https://formspree.io/f/yourid"
-               ========================================================= -->
-          <div class="field">
-            <label for="cf-name">Name</label>
-            <input type="text" id="cf-name" name="name" autocomplete="name" required />
-          </div>
-          <div class="field">
-            <label for="cf-business">Business name</label>
-            <input type="text" id="cf-business" name="business" autocomplete="organization" required />
-          </div>
-          <div class="field">
-            <label for="cf-email">Email</label>
-            <input type="email" id="cf-email" name="email" autocomplete="email" required />
-          </div>
-          <div class="field">
-            <label for="cf-website">Website <span class="field__opt">(optional)</span></label>
-            <input type="url" id="cf-website" name="website" placeholder="https://" autocomplete="url" />
-          </div>
-          <div class="field">
-            <label for="cf-message">Message</label>
-            <textarea id="cf-message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn--accent btn--lg" id="cf-submit">Send message</button>
-          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
+    <div class="svc">
+      <div class="svc__item">
+        <h3>Websites and online stores</h3>
+        <p>New builds and rebuilds that load fast, read clearly on a phone and turn visits into enquiries.</p>
+        <ul><li>WordPress and custom PHP</li><li>Shopify theme work in Liquid</li><li>Hand-built static sites</li><li>Landing pages for a launch or campaign</li></ul>
       </div>
-    </section>
-  </main>
-
-  <!-- =========================================================== -->
-  <!-- 11. FOOTER                                                   -->
-  <!-- =========================================================== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <span class="footer__brand-row">
-          <span class="nav__mark" aria-hidden="true">
-            <img src="assets/logo-white.webp" alt="" width="34" height="28" loading="lazy" decoding="async" />
-          </span>
-          <span class="footer__word">Anzato</span>
-        </span>
-        <p class="footer__tag">A technology consultancy by AnsatzAlgo Technologies Pvt. Ltd. Working with businesses in the US, UAE &amp; Singapore.</p>
+      <div class="svc__item">
+        <h3>Search and AI visibility</h3>
+        <p>Getting found on Google and named in ChatGPT, Perplexity and AI Overviews, measured so the result is provable.</p>
+        <ul><li>Technical SEO audits</li><li>GEO and AI search</li><li>Schema and structured data</li><li>Core Web Vitals, Search Console, GA4</li></ul>
       </div>
-      <nav class="footer__nav" aria-label="Footer">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer__meta">
-        <span class="footer__addr">AnsatzAlgo Technologies Pvt. Ltd. &middot; Mohan Garden, West Delhi, Delhi 110059, India</span>
-        <a href="mailto:skvkpandey@gmail.com">skvkpandey@gmail.com</a>
-        <a href="https://skvkpandey.com" target="_blank" rel="noopener">Founder</a>
-        <p>&copy; <span id="year">2026</span> Anzato. Built by Anzato.</p>
+      <div class="svc__item">
+        <h3>SaaS and custom software</h3>
+        <p>A micro SaaS or MVP you want to put in front of users, or the internal tool your team keeps doing by hand.</p>
+        <ul><li>Micro SaaS and MVPs</li><li>Python and Flask apps</li><li>Dashboards and admin panels</li><li>Maps and geospatial data</li><li>Registration and booking systems</li><li>AI features with Azure OpenAI</li><li>Hosting on Azure, Supabase and Cloudflare</li></ul>
+      </div>
+      <div class="svc__item">
+        <h3>Immersive web</h3>
+        <p>360° tours and WebXR experiences for spaces people need to see before they visit, built on the stack behind Viewlo.</p>
+        <ul><li>360° virtual tours</li><li>A-Frame and WebXR</li><li>Map-based discovery</li></ul>
       </div>
     </div>
-  </footer>
 
-  <script src="script.min.js" defer></script>
+    <div class="agency">
+      <div>
+        <h3>For agencies</h3>
+        <p>We take a limited amount of white-label development and SEO overflow. Your client stays yours, under a written non-solicit.</p>
+      </div>
+      <a class="btn btn--ghost" href="#contact">Ask about overflow work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ENGAGEMENTS -->
+<section class="sec" id="engage">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>How much does Anzato charge?</h2>
+      <p><span data-usd="An audit is $350, a build starts at $1,500 and a retainer starts at $300 a month." data-inr="An audit is ₹15,000, a build starts at ₹60,000 and a retainer starts at ₹12,000 a month.">An audit is $350, a build starts at $1,500 and a retainer starts at $300 a month.</span> Priced per deliverable, not per hour, so you know the number before anything starts. Most clients begin with one scoped piece of work.</p>
+    </header>
+    <div class="plans__bar">
+      <div class="cur" role="group" aria-label="Show prices in">
+        <button type="button" data-cur="usd" aria-pressed="true">USD</button>
+        <button type="button" data-cur="inr" aria-pressed="false">INR</button>
+      </div>
+      <p class="plans__note" data-usd="Prices in US dollars for clients outside India." data-inr="Prices in Indian rupees for Indian businesses, plus applicable taxes.">Prices in US dollars for clients outside India.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3>Audit</h3>
+        <p class="plan__price"><span data-usd="$350" data-inr="₹15,000">$350</span>fixed price, delivered in about a week</p>
+        <p>A written review of your site, its search rankings and its visibility in AI answers, ranked by what each problem is costing you.</p>
+        <ul><li>Crawl, index and speed review</li><li>AI search visibility check</li><li>Prioritised fix list you can hand to anyone</li></ul>
+        <a class="btn btn--ghost" href="#contact">Ask for an audit</a>
+      </article>
+      <article class="plan plan--key">
+        <h3>Build or rebuild</h3>
+        <p class="plan__price"><span data-usd="from $1,500" data-inr="from ₹60,000">from $1,500</span>fixed quote after the call</p>
+        <p>A website, store or tool, designed and built with SEO and analytics in from the start rather than bolted on.</p>
+        <ul><li>Written scope and timeline</li><li>Staging link you can check any time</li><li>One revision round included</li><li>Handover with your accounts and code</li></ul>
+        <a class="btn btn--signal" href="https://calendly.com/skvkpandey/30min" target="_blank" rel="noopener" data-track="book-plan">Book a scoping call</a>
+      </article>
+      <article class="plan">
+        <h3>Monthly retainer</h3>
+        <p class="plan__price"><span data-usd="from $300/mo" data-inr="from ₹12,000/mo">from $300/mo</span>for 10 hours a month, more in blocks of 10</p>
+        <p>Ongoing technical work, content and reporting for a site that needs to keep improving, not just stay online.</p>
+        <ul><li>Updates, fixes and new pages</li><li>Monthly SEO and AI search work</li><li>A short report on what moved</li><li>Unused hours roll over one month</li></ul>
+        <a class="btn btn--ghost" href="#contact">Ask about a retainer</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec sec--alt" id="process">
+  <div class="wrap">
+    <header class="sec__head">
+      <h2>How does a project with Anzato run?</h2>
+      <p>In four steps: a free 30-minute call, a written scope with a fixed quote, a build you can watch on a staging link, then launch and handover. Most of what slows a first project down is paperwork and guessing. Here is the whole path, up front.</p>
+    </header>
+    <ol class="steps">
+      <li><h3>A 30-minute call</h3><p>Bring the site or idea. You leave with a straight answer on what is holding it back, even if we never work together.</p></li>
+      <li><h3>Scope and quote</h3><p>A written scope with a fixed price and dates. NDA and agreement signed with a registered company.</p></li>
+      <li><h3>Build in the open</h3><p>A staging link from the first week and a short update every week. No disappearing for a month.</p></li>
+      <li><h3>Launch and hand over</h3><p>Hosting, analytics and Search Console in your name. Then a retainer if you want one, and no hard feelings if you don't.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PAPERWORK + ABOUT -->
+<section class="sec" id="about">
+  <div class="wrap about">
+    <div class="about__who">
+      <h2>Who will you be working with?</h2>
+      <p>Anzato is run by two developers who write the code themselves, so you always talk to the people doing the work. It is the client studio of AnsatzAlgo Technologies, the company that also builds and runs <a href="https://viewlo.in" target="_blank" rel="noopener">Viewlo</a>.</p>
+      <ul class="team">
+        <li class="person">
+          <img src="assets/img/profile.webp" width="880" height="1100" loading="lazy" alt="Shashank, founder of Anzato">
+          <div>
+            <h3>Shashank</h3>
+            <p class="person__role">Founder and lead developer</p>
+            <p>Runs every project from the first call. Websites, Shopify, technical SEO and AI search.</p>
+            <a href="https://skvkpandey.com" target="_blank" rel="noopener">skvkpandey.com</a>
+          </div>
+        </li>
+        <li class="person">
+          <img src="assets/img/raj.webp" width="480" height="600" loading="lazy" alt="Raj Aryan, consultant at Anzato">
+          <div>
+            <h3>Raj Aryan</h3>
+            <p class="person__role">Consultant</p>
+            <p>Builds the back ends, APIs and AI features: Python and Flask, RAG pipelines and LLM integrations.</p>
+            <a href="https://rajaryan.is-a.dev/" target="_blank" rel="noopener">rajaryan.is-a.dev</a>
+          </div>
+        </li>
+      </ul>
+      <p>We stay small on purpose and take a limited number of projects at a time, for clients in the US, UAE, Singapore, the UK and India.</p>
+    </div>
+
+    <div class="paper">
+      <h2>Is Anzato a registered company?</h2>
+      <p class="paper__lead">Yes. Contracts are signed with AnsatzAlgo Technologies Pvt. Ltd. These are the details your finance team will ask about.</p>
+      <dl>
+        <div><dt>Contracting entity</dt><dd>AnsatzAlgo Technologies Pvt. Ltd., a registered Indian private limited company. You sign an agreement and NDA with a business, not a freelancer with an invoice template.</dd></div>
+        <div><dt>US clients</dt><dd>W-8BEN-E on file. Services are performed wholly outside the US, so there is no US withholding on business profits.</dd></div>
+        <div><dt>Payment</dt><dd>Invoiced in USD or GBP through Wise Business, or INR by bank transfer in India. 50% upfront on a first project, the balance on delivery.</dd></div>
+        <div><dt>Ownership</dt><dd>You own the code, the site and every account. Analytics, Search Console and hosting go in your name from day one.</dd></div>
+        <div><dt>Time zones</dt><dd>Delhi based, with working hours that overlap US mornings, the Gulf and Singapore. Replies within one business day.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec--alt" id="faq">
+  <div class="wrap faq">
+    <h2>Questions people ask before booking</h2>
+    <div class="faq__list">
+      <details><summary>How much does a project cost?</summary><p>The starting prices are in the pricing section. The exact number depends on scope, which is why the first call is free. You get a fixed price in writing before any work starts, and it does not change unless the scope does.</p></details>
+      <details><summary>Can you work on the site I already have?</summary><p>Yes. Plenty of work is fixing, speeding up or extending an existing WordPress, Shopify or custom site rather than starting again. We will tell you honestly if a rebuild is cheaper.</p></details>
+      <details><summary>I only need SEO. Do you do that on its own?</summary><p>Yes. Technical SEO and AI search work is often where we start, beginning with an audit so you can see the problems before paying to fix them.</p></details>
+      <details><summary>Can you get my business mentioned in ChatGPT and other AI answers?</summary><p>We make your site easy for AI systems to crawl, read and quote: open crawler access, structured data, a clear answer at the top of each page and an llms.txt file. Then we track which AI tools send you visitors. Nobody can guarantee a mention, and we will not claim to.</p></details>
+      <details><summary>Do you work with clients outside India?</summary><p>Yes. We work with clients in the US, UAE, Singapore, the UK and India, over video calls and email, with working hours that overlap US mornings, the Gulf and Singapore.</p></details>
+      <details><summary>What happens after launch?</summary><p>You get everything: code, logins and a short handover. If you want ongoing work, a monthly retainer covers updates, SEO and reporting. If not, you leave with nothing tied to us.</p></details>
+      <details><summary>How quickly can you start?</summary><p>Usually within one to two weeks of a signed scope. Small fixes can often start sooner.</p></details>
+      <details><summary>Do you use templates or page builders?</summary><p>Not for client sites we build from scratch. We work in code, so pages stay fast and nothing breaks when a plugin updates. If your site already runs on a builder, we work with what is there.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="cta" id="contact">
+  <div class="wrap cta__in">
+    <div class="cta__copy">
+      <img class="cta__mark" src="assets/brand/mark-white.webp" width="56" height="46" alt="">
+      <h2>Bring the site you think should be doing better.</h2>
+      <p>On the call we look at it together and you hear what is actually holding it back. If it makes sense, we scope one piece of work and see how working together feels before anything bigger.</p>
+      <a class="btn btn--signal" href="https://calendly.com/skvkpandey/30min" target="_blank" rel="noopener" data-track="book-footer">Book a 30-minute call</a>
+    </div>
+
+    <div class="form contact-card">
+      <h3>Or write to us</h3>
+      <p class="contact-card__lead">Email reaches Shashank directly. Replies within one business day.</p>
+      <ul class="mails">
+        <li>
+          <a href="mailto:contact@ansatzalgo.com?subject=Project%20enquiry">contact@ansatzalgo.com</a>
+          <button type="button" class="copy" data-copy="contact@ansatzalgo.com">Copy</button>
+        </li>
+        <li>
+          <a href="mailto:skvkpandey@gmail.com?subject=Project%20enquiry">skvkpandey@gmail.com</a>
+          <button type="button" class="copy" data-copy="skvkpandey@gmail.com">Copy</button>
+        </li>
+      </ul>
+      <p class="contact-card__label">It helps to include</p>
+      <ul class="include">
+        <li>Your website, if you have one</li>
+        <li>What you need: a site or store, SEO, software, an audit or a retainer</li>
+        <li>A rough budget and when you would like to start</li>
+      </ul>
+      <p class="contact-card__alt">Prefer LinkedIn? <a href="https://www.linkedin.com/in/skvkpandey/" target="_blank" rel="noopener">Send a message there</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <a class="brand brand--light" href="#top"><img src="assets/brand/mark-white.webp" width="32" height="26" alt=""><span>Anzato</span></a>
+      <p>Anzato is a studio of AnsatzAlgo Technologies Pvt. Ltd.<br>Mohan Garden, West Delhi, Delhi 110059, India</p>
+    </div>
+    <nav class="foot__nav" aria-label="Footer">
+      <a href="#work">Work</a><a href="#services">Services</a><a href="#engage">Pricing</a><a href="#faq">FAQ</a>
+      <a href="mailto:contact@ansatzalgo.com">contact@ansatzalgo.com</a>
+      <a href="https://www.linkedin.com/in/skvkpandey/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://ansatzalgo.com" target="_blank" rel="noopener">AnsatzAlgo</a>
+    </nav>
+    <p class="foot__small">&copy; <span id="year">2026</span> AnsatzAlgo Technologies Pvt. Ltd. This site is hand-built by Anzato. Last updated <time datetime="2026-11-01">1 November 2026</time>.</p>
+  </div>
+</footer>
+
+<a class="mobile-cta" href="https://calendly.com/skvkpandey/30min" target="_blank" rel="noopener" data-track="book-sticky">Book a 30-minute call</a>
+
+<script src="script.js" defer></script>
 </body>
 </html>
