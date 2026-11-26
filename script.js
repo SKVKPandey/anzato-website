@@ -7,7 +7,7 @@
   var BOOKING_URL = "https://calendly.com/skvkpandey/30min";
 
   // PageSpeed Insights key (restrict it to anzato.com in Google Cloud).
-  var PSI_API_KEY = "REDACTED";
+  var PSI_API_KEY = ""; // set your own key, restricted to your domain (see README)
   // Optional: your deployed Anzato backend, e.g. "https://api.anzato.com".
   // When set, the check runs through it and the key never reaches the browser.
   var BACKEND_URL = "";
